@@ -2,51 +2,51 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardAdj = [
     {
       name: "carros",
-      img: "images/carros1.png"
+      img: "images/1.jpg"
     },
     {
       name: "carros",
-      img: "images/carros2.png"
+      img: "images/2.jpg"
     },
     {
       name: "carros",
-      img: "images/carros3.png"
+      img: "images/3.jpg"
     },
     {
       name: "carros",
-      img: "images/carros4.png"
+      img: "images/4.jpg"
     },
     {
       name: "carros",
-      img: "images/carros5.png"
+      img: "images/5.jpg"
     },
     {
       name: "carros",
-      img: "images/carros6.png"
+      img: "images/6.jpg"
     },
     {
       name: "carros",
-      img: "images/carros1.png"
+      img: "images/1.jpg"
     },
     {
       name: "carros",
-      img: "images/carros2.png"
+      img: "images/2.jpg"
     },
     {
       name: "carros",
-      img: "images/carros3.png"
+      img: "images/3.jpg"
     },
     {
       name: "carros",
-      img: "images/carros4.png"
+      img: "images/4.jpg"
     },
     {
       name: "carros",
-      img: "images/carros5.png"
+      img: "images/5.jpg"
     },
     {
       name: "carros",
-      img: "images/carros6.png"
+      img: "images/6.jpg"
     }
   ];
 });

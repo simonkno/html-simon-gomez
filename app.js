@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "carros",
       img: "images/6.jpg"
-    }
+    },
   ];
 
   const cuadricula = document.querySelector(".cuadricula");
@@ -68,4 +68,18 @@ document.addEventListener("DOMContentLoaded", () => {
       cuadricula.appendChild(carta);
     }
   }
-});
+
+}
+fuction voltearCarta(){
+  var cardId = this.getAttribute("data-id");
+ cartasEscogidas.push(cardAdj[cardId].name);
+ cartasEscogidasId.push(cardId);
+ this.setAttribute("src", cardAdj[cardId].img);
+ if (cartasEscogidas.length === 2){
+
+
+
+ }
+
+
+ 

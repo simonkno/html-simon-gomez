@@ -67,7 +67,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
       cuadricula.appendChild(carta);
     }
+    function verificarPareja(){function verificarPareja(){
+      const opcionUnoId = cartasEscogidasId[0]
+      const opcionDosId = cartasEscogidasId[1]
+
+      if (opcionUnoId === opcionDosId) {
+        cards[opcionUnoId]. setAttribute("src","images/reverso.png"); 
+        cards[opcionDosId]. setAttribute("src","images/reverso.png"); 
+        alert("¡Diste click a la misma imagen!");
+      } else if (cartasEscogidas[0] === cartasEscogidas[1]) {
+        alert("correcto");
+        cards[opcionUnoId].setAttribute("src","images/blang.png");
+        cards[opcionDosId].setAttribute("src","images/blang.png");
+        cards[opcionUnoId].removeEventListener("click", voltearCarta);
+        cards[opcionDosId].removeEventListener("click", voltearCarta);
+        cartasGanadas.push(cartasEscogidas);
+      } else {
+        cards[opcionUnoId].setAttribute("src", "images/reverso.png");
+        cards[opcionDosId].setAttribute("src", "images/reverso.png");
+        alert("¡intenta de nuevo!");
   }
+        cartasEscogidas = [];
+        cartasEscogidasId = [];
+        resultado.textContent = cartasGanadas.length;
+
+        if (cartasGanadas.length === cardAdj.length / 2) ;
+        resultado.textContent = "¡Felicitaciones, encontraste todos los pares!";
+    }
+      
 
   function voltearCarta() {
     var cardId = this.getAttribute("data-id");
